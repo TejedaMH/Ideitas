@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    color: #00FF00;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 5rem;
+    text-shadow: 0 0 5px limegreen, 0 0 10px limegreen;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.clock {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+}
+
+.digit {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+    transition: all 0.1s ease-in-out;
+}
+
+.glitch {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    color: #FF0000;
+    transform: translateX(-2px);
+}

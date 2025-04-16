@@ -1,0 +1,44 @@
+body {
+    background-color: black;
+    color: #00FF00;
+    font-family: 'Courier New', Courier, monospace;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+  
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+h1 {
+    font-size: 3rem;
+    text-shadow: 0 0 5px limegreen, 0 0 10px limegreen;
+    margin-bottom: 1rem;
+}
+  
+.mensaje {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 5px limegreen;
+}
+  
+.loader {
+    margin-top: 2em;
+    border: 6px solid #00FF00;
+    border-top: 6px solid #00ff001e;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite; /* Usando "spin" aquí */
+}
+  
+@keyframes spin { /* Corregí el nombre de "carga" a "spin" */
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
